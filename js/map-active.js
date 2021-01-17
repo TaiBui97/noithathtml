@@ -1,11 +1,9 @@
 var map;
 var latlng = new google.maps.LatLng(51.5074, 0.1278);
-var stylez = [
-    {
+var stylez = [{
         "featureType": "administrative.locality",
         "elementType": "all",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#2c2e33"
             },
             {
@@ -22,8 +20,7 @@ var stylez = [
     {
         "featureType": "landscape",
         "elementType": "all",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#ffffff"
             },
             {
@@ -40,8 +37,7 @@ var stylez = [
     {
         "featureType": "poi",
         "elementType": "all",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#ffffff"
             },
             {
@@ -58,8 +54,7 @@ var stylez = [
     {
         "featureType": "road",
         "elementType": "geometry",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#bbc0c4"
             },
             {
@@ -76,8 +71,7 @@ var stylez = [
     {
         "featureType": "road",
         "elementType": "labels",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#bbc0c4"
             },
             {
@@ -94,8 +88,7 @@ var stylez = [
     {
         "featureType": "road.arterial",
         "elementType": "labels",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#bbc0c4"
             },
             {
@@ -112,8 +105,7 @@ var stylez = [
     {
         "featureType": "road.local",
         "elementType": "geometry",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#e9ebed"
             },
             {
@@ -130,8 +122,7 @@ var stylez = [
     {
         "featureType": "transit",
         "elementType": "all",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#e9ebed"
             },
             {
@@ -148,8 +139,7 @@ var stylez = [
     {
         "featureType": "water",
         "elementType": "all",
-        "stylers": [
-            {
+        "stylers": [{
                 "hue": "#e9ebed"
             },
             {
@@ -176,7 +166,7 @@ var mapOptions = {
 };
 map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
 var geocoder_map = new google.maps.Geocoder();
-var address = 'London';
+var address = 'Ho Chi Minh';
 geocoder_map.geocode({
     'address': address
 }, function (results, status) {
